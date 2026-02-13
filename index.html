@@ -3,9 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Virat Kohli | Official Tribute</title>
+<title>Virat Kohli | Tribute</title>
 
-<!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
 
 <style>
@@ -50,13 +49,12 @@ nav a:hover{
     color:#ffcc00;
 }
 
-/* Sections */
 section{
     padding:100px 50px;
     text-align:center;
 }
 
-/* Hero */
+/* HERO */
 .hero{
     height:100vh;
     background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
@@ -64,28 +62,42 @@ section{
     background-size:cover;
     background-position:center;
     display:flex;
-    flex-direction:column;
     justify-content:center;
     align-items:center;
+    text-align:center;
+}
+
+.hero-content img{
+    width:130px;
+    height:130px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid #ffcc00;
+    margin-bottom:20px;
 }
 
 .hero h2{
     font-size:60px;
-    font-weight:800;
     color:#ffcc00;
 }
 
 .hero p{
     font-size:20px;
-    margin-top:15px;
+    margin-top:10px;
 }
 
-/* About */
+.creator-name{
+    margin-top:15px;
+    font-size:16px;
+    color:#ffcc00;
+}
+
+/* ABOUT */
 .about{
     background:#1a1a1a;
 }
 
-/* Gallery */
+/* GALLERY */
 .gallery{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -98,26 +110,25 @@ section{
     height:300px;
     object-fit:cover;
     border-radius:10px;
-    display:block;
+    transition:0.4s;
 }
-
 
 .gallery img:hover{
     transform:scale(1.05);
 }
 
-/* Video */
+/* VIDEO */
 .video-section{
     background:#1a1a1a;
 }
 
 video{
     width:80%;
-    border-radius:10px;
     margin-top:30px;
+    border-radius:10px;
 }
 
-/* Footer */
+/* FOOTER */
 footer{
     background:#000;
     padding:20px;
@@ -141,23 +152,27 @@ footer{
     </nav>
 </header>
 
-<!-- Hero -->
+<!-- HERO -->
 <section class="hero" id="home">
-    <h2>King Kohli</h2>
-    <p>The Run Machine of Modern Cricket</p>
+    <div class="hero-content">
+        <img src="neev.jpg" alt="Neev">
+        <h2>King Kohli</h2>
+        <p>The Run Machine of Modern Cricket</p>
+        <h3 class="creator-name">Website Created by Neev Gohel 🚀</h3>
+    </div>
 </section>
 
-<!-- About -->
+<!-- ABOUT -->
 <section class="about" id="about">
-    <h2>About</h2>
+    <h2>About Virat Kohli</h2>
     <p>
         Virat Kohli is one of the greatest cricketers of the modern era.
-        Known for his aggression, consistency, and passion for the game,
-        he has broken numerous records in international cricket.
+        Known for his aggression, consistency and leadership,
+        he has broken numerous international records.
     </p>
 </section>
 
-<!-- Gallery -->
+<!-- GALLERY -->
 <section id="gallery">
     <h2>Gallery</h2>
     <div class="gallery">
@@ -168,7 +183,7 @@ footer{
     </div>
 </section>
 
-<!-- Video -->
+<!-- VIDEO -->
 <section class="video-section" id="video">
     <h2>Match Highlight</h2>
     <video controls>
@@ -178,9 +193,8 @@ footer{
 </section>
 
 <footer>
-    © 2026 Virat Kohli Tribute Website | Made by Neev 🚀
+    © 2026 Virat Kohli Tribute | Designed by Neev
 </footer>
 
 </body>
 </html>
-
