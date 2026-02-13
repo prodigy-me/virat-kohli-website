@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Virat Kohli - Official Tribute</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body{
+            background:#111;
+            color:#fff;
+        }
+
+        header{
+            position:fixed;
+            width:100%;
+            background:rgba(0,0,0,0.8);
+            padding:15px 50px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            z-index:1000;
+        }
+
+        header h1{
+            color:#ffcc00;
+        }
+
+        nav a{
+            text-decoration:none;
+            color:#fff;
+            margin-left:20px;
+            font-weight:500;
+            transition:0.3s;
+        }
+
+        nav a:hover{
+            color:#ffcc00;
+        }
+
+        section{
+            padding:100px 50px;
+        }
+
+        /* Hero Section */
+        .hero{
+            height:100vh;
+            background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+            url("C:\Users\tusha\OneDrive\Pictures\v.webp");
+            background-size:cover;
+            background-position:center;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            text-align:center;
+        }
+
+        .hero h2{
+            font-size:60px;
+            font-weight:800;
+            color:#ffcc00;
+        }
+
+        .hero p{
+            font-size:20px;
+            margin-top:15px;
+        }
+
+        /* About */
+        .about{
+            display:flex;
+            gap:40px;
+            align-items:center;
+            flex-wrap:wrap;
+        }
+
+        .about img{
+            width:400px;
+            border-radius:10px;
+        }
+
+        .about-text{
+            max-width:600px;
+        }
+
+        /* Stats Cards */
+        .stats{
+            display:flex;
+            gap:30px;
+            flex-wrap:wrap;
+            justify-content:center;
+        }
+
+        .card{
+            background:#222;
+            padding:30px;
+            width:250px;
+            text-align:center;
+            border-radius:10px;
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-10px);
+            background:#ffcc00;
+            color:#000;
+        }
+
+        /* Gallery */
+        .gallery{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:20px;
+        }
+
+        .gallery img{
+            width:100%;
+            border-radius:10px;
+            transition:0.3s;
+        }
+
+        .gallery img:hover{
+            transform:scale(1.05);
+        }
+
+        /* Video Section */
+        .video-section video{
+            width:100%;
+            border-radius:10px;
+        }
+
+        /* Footer */
+        footer{
+            text-align:center;
+            padding:30px;
+            background:#000;
+        }
+
+        footer p{
+            color:#aaa;
+        }
+
+        /* Responsive */
+        @media(max-width:768px){
+            .hero h2{
+                font-size:40px;
+            }
+            .about{
+                flex-direction:column;
+                text-align:center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Virat Kohli</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#stats">Stats</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#videos">Videos</a>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+    <div>
+        <h2>The King of Cricket</h2>
+        <p>A Tribute to One of the Greatest Batsmen of All Time</p>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about">
+    <h2>About Virat Kohli</h2>
+    <div class="about">
+        <img src="PUT_ABOUT_IMAGE_PATH_HERE">
+        <div class="about-text">
+            <p>
+                Virat Kohli is an Indian international cricketer and former captain of the Indian national team.
+                Known for his aggressive playing style and consistency, he is regarded as one of the best batsmen in the world.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Stats Section -->
+<section id="stats">
+    <h2>Career Stats</h2>
+    <div class="stats">
+        <div class="card">
+            <h3>80+</h3>
+            <p>International Centuries</p>
+        </div>
+        <div class="card">
+            <h3>25,000+</h3>
+            <p>International Runs</p>
+        </div>
+        <div class="card">
+            <h3>ICC Awards</h3>
+            <p>Multiple Honors</p>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery Section -->
+<section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+        <img src="C:\Users\tusha\OneDrive\Pictures\v11.jpg">
+        <img src="C:\Users\tusha\OneDrive\Pictures\v2.jpg">
+        <img src="C:\Users\tusha\OneDrive\Pictures\v3.webp">
+        <img src="C:\Users\tusha\OneDrive\Pictures\v5.jpg">
+    </div>
+</section>
+
+<!-- Video Section -->
+<section id="videos" class="video-section">
+    <h2>Highlight Video</h2>
+    <video controls>
+        <source src="C:\Users\tusha\Downloads\videoplayback.mp4" type="video/mp4">
+        Your browser does not support video.
+    </video>
+</section>
+
+<footer>
+    <p>© 2026 Tribute Website | Designed by You</p>
+</footer>
+
+</body>
+</html>
